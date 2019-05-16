@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Coming Soon' rel='stylesheet'>
+        
+        <meta charset="UTF-8">
+        <title>Title of the document</title>
+        
+    </head>
+
+    <body>
+        
+        <header>
+            
+            <nav>
+                
+                <ul>
+                    <li>  <a href="#" id="blackHeading"> h2 zwart </a>  </li>
+                    <li>  <a href="#" id="comicsansHeading"> comic sans </a>  </li>
+                    <li>  <a href="#" id="beepHeading"> Beep </a>  </li>
+                </ul>
+            
+            </nav>
+            
+            <div class="clear"> </div>
+        </header>
+        
+        
+        <main>
+
+            
+            
+            <p class="firsttext">
+                    My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. 
+                    Jackie Brown (1997) 
+                
+            </p>
+
+            <div class="kittenfoto">
+                <img src="img/kitten@2x.jpg" alt="Smiley face"> 
+
+                <div class="clear"> </div>
+            </div>
+
+            <div class="kittenfoto kittenfotodiv" >
+                    
+
+                    
+            </div>
+
+            <div class="clear"> </div>
+
+            <div id="accordion">
+
+                <h3> Section 1 </h3>
+
+                <div>
+                    <p>
+                        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                    </p>
+
+                </div>
+
+                <h3>Section 2</h3>
+                <div>
+                    <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                    </p>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                    <p>
+                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                    </p>
+                    <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                    </ul>
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                    <p>
+                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                    mauris vel est.
+                    </p>
+                    <p>
+                    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.
+                    </p>
+                </div>
+                
+            </div>
+        
+            <div class="clear"> </div>
+
+        </main>
+
+
+
+        <script src="js/jquery-3.4.1.js"></script>
+        <!-- <link rel="stylesheet" href="jquery-ui.min.css"> -->
+        <script src="jqui/external/jquery/jquery.js"></script>
+        <script src="jqui/jquery-ui.min.js"></script>
+        <!-- <script src="external/jquery/jquery.js"></script>
+        <script src="jquery-ui.min.js"></script> -->
+
+
+        <script>
+                $(function() { // voer functie uit zodra DOM klaar is
+                    $( "#accordion" ).accordion(); // de accordion functie van jQuery UI
+                });
+                </script>
+
+        <script>
+            var pColor = '#EA2';
+            var textp;
+    
+            $(document).ready(function(){
+
+                $('#blackHeading').click(function(){
+                    console.log("hoi");
+                    $('p').css({'color': pColor});
+                });
+                
+                $('#comicsansHeading').click(function(){
+                  $('body').css({'font-family': 'Coming Soon'});  
+                });
+
+                $('#beepHeading').click(function(){
+                  $('p').text("My moneys in that office, right? If she start giving me some *beep* about it aint there, and we got to go someplace else and get it, Im gonna shoot you in the head then and there. Then Im gonna shoot that *beeps* in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when Im talking to you, *beep*");
+                });
+
+                
+            });     
+        </script>
+
+        
+    </body>
+    
+    
+
+</html>
